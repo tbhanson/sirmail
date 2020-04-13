@@ -38,8 +38,8 @@
   (define default-mailbox-options null)
 
   ;; ------------------------------------------------------------
-  ;; Every window (reader or sender) is in it's own
-  ;; eventspace. Each should terminate by calling `exit'.
+  ;; Every window (reader or sender) is in its own
+  ;; eventspace. Each should terminate by calling 'exit'.
   ;; We install an exit handler so that we only actually
   ;; exit when the last window is closed.
 
@@ -79,7 +79,7 @@
 
   ;; Reader windows -----------------------------------------------------------
   
-  ;; This function uses `start-new-window' to open a reader window.
+  ;; This function uses 'start-new-window' to open a reader window.
   ;; A reader window is implemented by an instance of the sirmail@ unit.
   (define open-mailbox
     (case-lambda
